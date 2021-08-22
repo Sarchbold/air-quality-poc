@@ -13,7 +13,20 @@ workflows:
     # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/2.0/configuration-reference/#workflows 
     jobs:
       - build-and-test
+jobs:
+  example-job:
+    docker:
+      # replace with your preferred image
+      - image: cimg/base:stable
+    steps:
+      - python/install-packages:
+          app-dir: /app 
+          pkg-manager: pip 
 
+workflows:
+  example-workflow:
+    jobs:
+      - example-job
 
 jobs:
   build-and-test:  # This is the name of the job, feel free to change it to better match what you're trying to do!
