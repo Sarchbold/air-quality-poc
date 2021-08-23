@@ -8,3 +8,5 @@ logstash
 pylint
 fastapi
 requests
+flask-swagger
+flask-swagger-ui
