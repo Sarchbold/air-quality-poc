@@ -6,3 +6,5 @@ pytest-mock
 aiohttp
 logstash
 pylint
+fastapi
+requests
