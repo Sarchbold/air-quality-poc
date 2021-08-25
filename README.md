@@ -8,3 +8,11 @@ To update the requirements.txt, install pip-tools, edit requirements.in, and run
 To generate a docker image build with the requirements installed run 
 
     ./docker-build.sh 
+
+To start the container run:
+
+    Docker run -d -t -p 8000:8000 <image>:<tag> (fast-api:v5)
+
+To scan your container for security vulnerabilities run:
+
+    Docker scan <image>:<tag> (fast-api:v5)
