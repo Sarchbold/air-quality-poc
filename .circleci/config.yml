@@ -43,10 +43,3 @@ jobs:
           command: coverage run -m pytest --ignore=src/api/responder.py
       - codecov/upload
           file: .coverage
-
-#upload-coverage:
-  # docker:
-      # replace with your preferred image
-  #    - image: cimg/python:3.9
-  #  steps:
-  #    - codecov/upload
