@@ -1,6 +1,6 @@
-    # air-quality-poc
-
 [![CircleCI](https://circleci.com/gh/Sarchbold/air-quality-poc/tree/main.svg?style=svg&circle-token=fa313ea772a617091e96a53e4de85a2a36c6a02e)](https://circleci.com/gh/Sarchbold/air-quality-poc/tree/main)
+
+  # air-quality-poc
 
 Prototype repo for analyzing air quality data against covid restriction timelines in Boston
 
