@@ -42,5 +42,4 @@ jobs:
           # This assumes pytest is installed via the install-package step above
           command: coverage run -m pytest --ignore=src/api/responder.py
       - codecov/upload
-
-
+          file: .coverage
