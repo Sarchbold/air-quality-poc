@@ -11,3 +11,4 @@ uvicorn[standard]
 requests
 flask-swagger
 flask-swagger-ui
+coverage
