@@ -40,7 +40,9 @@ colorama==0.4.4
     #   pytest
     #   uvicorn
 coverage==5.5
-    # via pytest-cov
+    # via
+    #   -r .\requirements.in
+    #   pytest-cov
 fastapi==0.68.0
     # via -r .\requirements.in
 flask==2.0.1
