@@ -41,7 +41,7 @@ jobs:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
 
-          command: coverage run -m pytest
+          command: coverage run -m pytest --ignore=src/api/responder.py
   upload-coverage: 
     docker:
       # replace with your preferred image
