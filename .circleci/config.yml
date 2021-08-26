@@ -6,13 +6,15 @@ orbs:
   # so you dont have to copy and paste it everywhere.
   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/python
   python: circleci/python@1.2
+  codecov: codecov/codecov@3.0.0
 
 workflows:
-  sample:  # This is the name of the workflow, feel free to change it to better match your workflow.
+  build-test:  # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run. 
     # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/2.0/configuration-reference/#workflows 
     jobs:
       - build-and-test
+      - upload-coverage
 
 
 jobs:
@@ -38,4 +40,10 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: pytest
+          command: coverage run -m pytest
+  upload-coverage: 
+    docker:
+      # replace with your preferred image
+      - image: cimg/python:3.9
+    steps:
+      - codecov/upload 
