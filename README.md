@@ -1,4 +1,7 @@
     # air-quality-poc
+
+[![CircleCI](https://circleci.com/gh/Sarchbold/air-quality-poc/tree/main.svg?style=svg)](https://circleci.com/gh/Sarchbold/air-quality-poc/tree/main)
+
 Prototype repo for analyzing air quality data against covid restriction timelines in Boston
 
 To install dependencies, run pip install -r requirements.txt
