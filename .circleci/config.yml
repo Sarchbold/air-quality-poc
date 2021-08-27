@@ -42,7 +42,7 @@ jobs:
           # This assumes pytest is installed via the install-package step above
           command: coverage run -m pytest
       - run:
-          name: Coverage Report plain
+          name: Coverage Report
           command: coverage xml
       - codecov/upload
       - run:
