@@ -40,11 +40,15 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: coverage run -m pytest --ignore=src/api/responder.py
+          command: coverage run -m pytest
+      - run:
+          name: Coverage Report plain
+          command: coverage xml
       - codecov/upload
           file: .coverage
       - run:
           name: Update version
           when: on_success
           command: semantic-release publish
+
 
