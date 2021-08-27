@@ -2,6 +2,8 @@
 
 [![codecov](https://codecov.io/gh/Sarchbold/air-quality-poc/branch/main/graph/badge.svg?token=WTA3WTCDOV)](https://codecov.io/gh/Sarchbold/air-quality-poc)
 
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/Sarchbold/air-quality-poc/releases)
+
   # air-quality-poc
 
 Prototype repo for analyzing air quality data against covid restriction timelines in Boston
