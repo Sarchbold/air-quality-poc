@@ -6,8 +6,8 @@ from urllib.request import urlopen
 import requests
 import json
 
+def getSupportedStates(country):
 
-def getsupportedstates(country):
     req = (
         "http://api.airvisual.com/v2/states?country="
         + country
