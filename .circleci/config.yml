@@ -45,7 +45,6 @@ jobs:
           name: Coverage Report plain
           command: coverage xml
       - codecov/upload
-          file: .coverage
       - run:
           name: Update version
           when: on_success
