@@ -40,9 +40,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: coverage run -m pytest --ignore=src/api/responder.py
-      - run:
-          name: Combine coverage
-          command: coverage combine
-      - codecov/upload
+          command: coverage run -m pytest --ignore=src/api/responder.py -o coverage.xml
+      - codecov/upload:
+          file: coverage.xml
 
