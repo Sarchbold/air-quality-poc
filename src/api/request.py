@@ -6,6 +6,7 @@ from urllib.request import urlopen
 import requests
 import json
 
+
 def getsupportedstates(country):
     req = (
         "http://api.airvisual.com/v2/states?country="
@@ -13,12 +14,11 @@ def getsupportedstates(country):
         + "&key=14098954-5274-4969-b70a-c68fc6d522ca"
     )
     response = urlopen(req)
-    json_data = response.read().decode('utf-8', 'replace')
+    json_data = response.read().decode("utf-8", "replace")
 
     d = json.loads(json_data)
-    df = pd.json_normalize(d['data'])
+    df = pd.json_normalize(d["data"])
     print(df)
-
 
 
 def getcountrydata(city, state, country):
@@ -32,8 +32,8 @@ def getcountrydata(city, state, country):
         + "&key=14098954-5274-4969-b70a-c68fc6d522ca"
     )
     response = urlopen(req)
-    json_data = response.read().decode('utf-8', 'replace')
+    json_data = response.read().decode("utf-8", "replace")
 
     d = json.loads(json_data)
-    df = pd.json_normalize(d['data'])
+    df = pd.json_normalize(d["data"])
     print(df)
