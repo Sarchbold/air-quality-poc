@@ -50,3 +50,4 @@ jobs:
           when: on_success
           command: ./semantic_version.sh
 
+
