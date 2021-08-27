@@ -48,12 +48,5 @@ jobs:
       - run:
           name: Update version
           when: on_success
-          command: ["/bin/sh", "-c"]
-          args:
-            - echo starting;
-              git config user.email "stephen_archbold@msn.com"
-              git config user.name "Stephen"
-              semantic-release publish
-              echo done;
-
+          command: ./semantic_version.sh
 
