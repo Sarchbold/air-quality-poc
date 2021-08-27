@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Execute query by adding /countries/country=usa"}
+    return {"message": "Execute query by adding /countries/?country=usa"}
 
 
 @app.get("/countries/")
