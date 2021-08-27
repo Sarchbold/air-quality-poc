@@ -5,6 +5,7 @@ import pandas as pd
 from urllib.request import urlopen
 import json
 
+
 def getsupportedstates(country):
 
     req = (
@@ -15,7 +16,6 @@ def getsupportedstates(country):
     response = urlopen(req)
     json_data = response.read().decode("utf-8", "replace")
     return json_data
-
 
 
 def getcountrydata(city, state, country):
