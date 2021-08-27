@@ -45,10 +45,6 @@ jobs:
           name: Coverage Report plain
           command: coverage xml
       - codecov/upload
-      - run:
-          name: Update version
-          when: on_success
-      - run:
           name: Update version
           when: on_success
           command: git config user.email "stephen_archbold@msn.com"
