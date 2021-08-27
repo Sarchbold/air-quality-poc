@@ -4,6 +4,7 @@ Send the request to the external API and return results
 
 import requests
 
+
 def getSupportedStates(country):
     req = (
         "http://api.airvisual.com/v2/states?country="
