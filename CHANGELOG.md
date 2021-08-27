@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.0 (2021-08-27)
+### Feature
+* Returning API results as DF table ([#21](https://github.com/Sarchbold/air-quality-poc/issues/21)) ([`5ab9f5d`](https://github.com/Sarchbold/air-quality-poc/commit/5ab9f5daa4a5afe1ea42c2f82845f4b4815462b7))
+
 ## v1.0.1 (2021-08-27)
 ### Fix
 * Sa ci testing ([#18](https://github.com/Sarchbold/air-quality-poc/issues/18)) ([`bf25d11`](https://github.com/Sarchbold/air-quality-poc/commit/bf25d116c8c87923c5c6d13f7660771a2a758922))
