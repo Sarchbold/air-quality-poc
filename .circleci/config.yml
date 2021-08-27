@@ -42,13 +42,12 @@ jobs:
           # This assumes pytest is installed via the install-package step above
           command: coverage run -m pytest
       - run:
-          name: Coverage Report plain
+          name: Coverage Report
           command: coverage xml
       - codecov/upload
+      - run:
           name: Update version
           when: on_success
-          command: git config user.email "stephen_archbold@msn.com"
-                   git config user.name "Stephen"
-                   semantic-release publish
+          command: ./semantic_version.sh
 
 
