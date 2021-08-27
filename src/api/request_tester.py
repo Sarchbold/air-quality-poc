@@ -2,5 +2,6 @@
 
 from request import *
 
-getSupportedStates("USA")
+getsupportedstates("USA")
+
 # getCountryData('Boston', 'MA', 'USA')

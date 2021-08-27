@@ -48,6 +48,6 @@ jobs:
       - run:
           name: Update version
           when: on_success
-          command: semantic-release publish
+          command: bash ./semantic_version.sh
 
 

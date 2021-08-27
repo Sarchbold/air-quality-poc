@@ -13,3 +13,4 @@ flask-swagger
 flask-swagger-ui
 coverage
 python-semantic-release
+pandas
