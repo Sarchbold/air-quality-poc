@@ -120,6 +120,8 @@ regex==2021.8.3
     # via black
 requests==2.26.0
     # via -r .\requirements.in
+semantic-release==0.1.0
+    # via -r .\requirements.in
 starlette==0.14.2
     # via fastapi
 toml==0.10.2

@@ -12,3 +12,4 @@ requests
 flask-swagger
 flask-swagger-ui
 coverage
+semantic-release
