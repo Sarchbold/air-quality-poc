@@ -1,7 +1,11 @@
 """ Test area for functionality """
 
 from request import *
+import json
 
-getsupportedstates("USA")
+response = getsupportedstates("USA")
 
-# getCountryData('Boston', 'MA', 'USA')
+d = json.loads(response)
+df = pd.json_normalize(d["data"])
+print(df)
+#getCountryData('Boston', 'MA', 'USA')
