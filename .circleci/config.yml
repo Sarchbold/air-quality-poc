@@ -43,10 +43,7 @@ jobs:
           command: coverage run -m pytest
       - run:
           name: Coverage Report plain
-          command: coverage report
-      - run:
-          name: Coverage Report HTML
-          command: coverage html
+          command: coverage xml
       - codecov/upload
 
 
