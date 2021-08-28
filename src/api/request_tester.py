@@ -3,9 +3,13 @@
 from request import *
 import json
 
-response = getsupportedstates("USA")
+response = getsupportedstates("USA", "raw")
+print(response)
 
-d = json.loads(response)
-df = pd.json_normalize(d["data"])
-print(df)
+response = getsupportedstates("USA", "json")
+print(response)
+
+# d = json.loads(response)
+# df = pd.json_normalize(d["data"])
+# print(df)
 # getCountryData('Boston', 'MA', 'USA')

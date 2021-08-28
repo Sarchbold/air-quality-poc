@@ -18,6 +18,7 @@ def getsupportedstates(country):
     return json_data
 
 
+
 def getcountrydata(city, state, country):
     req = (
         "http://api.airvisual.com/v2/city?city="

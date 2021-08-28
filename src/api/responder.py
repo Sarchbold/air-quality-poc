@@ -12,6 +12,4 @@ async def root():
 @app.get("/countries/")
 async def return_list(country: str):
     results = getsupportedstates(country)
-    if country:
-        results.update({"country": country})
     return results
