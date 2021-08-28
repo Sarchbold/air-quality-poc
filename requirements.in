@@ -1,9 +1,7 @@
-pyspark
 black
 pytest
 pytest-cov
 pytest-mock
-aiohttp
 logstash
 pylint
 fastapi
