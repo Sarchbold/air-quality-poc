@@ -1,6 +1,7 @@
-from src.api.responder import app
+from src.api.responder import *
 from fastapi.testclient import TestClient
 import json
+
 
 client = TestClient(app)
 
