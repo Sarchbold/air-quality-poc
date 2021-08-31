@@ -6,7 +6,7 @@ from urllib.request import urlopen
 import json
 
 
-class Requester:
+class Request:
     def __init__(self, country):
         self.country = country
 

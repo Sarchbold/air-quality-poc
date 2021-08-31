@@ -1,9 +1,9 @@
 """ Test area for functionality """
 
-from request import Requester
+from request import Request
 import json
 
-response = Requester("USA")
+response = Request("USA")
 print(response.getsupportedstates())
 
 
