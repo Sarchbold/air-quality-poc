@@ -1,4 +1,4 @@
-from src.requester_api.main import app as app
+from requester_api.main import app as app
 from fastapi.testclient import TestClient
 import json
 
