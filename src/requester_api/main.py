@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from src.requester_api.requester import Request
 
+
 app = FastAPI()
 
 
