@@ -16,7 +16,6 @@ def getsupportedstates(country):
     response = urlopen(req)
     json_data = response.read().decode("utf-8", "replace")
     return json_data
-    print(req)
 
 
 def getcountrydata(city, state, country):
