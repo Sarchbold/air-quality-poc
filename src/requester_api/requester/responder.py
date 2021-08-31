@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from request import *
+from request import Requester
 
 app = FastAPI()
 
@@ -11,5 +11,5 @@ async def root():
 
 @app.get("/countries/")
 async def return_list(country: str):
-    results = getsupportedstates(country)
+    results = Requester(country)
     return results
