@@ -3,11 +3,9 @@
 from request import *
 import json
 
-response = getsupportedstates("USA", "raw")
+response = getsupportedstates("USA")
 print(response)
 
-response = getsupportedstates("USA", "json")
-print(response)
 
 # d = json.loads(response)
 # df = pd.json_normalize(d["data"])
