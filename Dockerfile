@@ -7,4 +7,4 @@ RUN apt-get update && \
     apt-get -y install gcc mono-mcs
 RUN pip install -r /app/requirements.txt
 CMD cd /app/src/requester_api && \
-    uvicorn __main__:app --reload --host 0.0.0.0
+    uvicorn main:app --reload --host 0.0.0.0

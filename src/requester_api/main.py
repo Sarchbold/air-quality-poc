@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .requester import Requester
+from requester import Requester
 
 app = FastAPI()
 
