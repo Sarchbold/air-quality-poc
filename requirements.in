@@ -12,3 +12,4 @@ flask-swagger-ui
 coverage
 python-semantic-release
 pandas
+air-quality-poc
