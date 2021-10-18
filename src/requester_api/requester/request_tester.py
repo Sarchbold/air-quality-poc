@@ -1,10 +1,10 @@
 """ Test area for functionality """
 
-from request import *
+from request import Request
 import json
 
-response = getsupportedstates("USA")
-print(response)
+response = Request("USA")
+print(response.getsupportedstates())
 
 
 # d = json.loads(response)
