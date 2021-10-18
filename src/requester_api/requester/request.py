@@ -14,7 +14,7 @@ class Request:
         req = (
                 "http://api.airvisual.com/v2/states?country="
                 + self.country
-                + "&key=14098954-5274-4969-b70a-c68fc6d522ca"
+                + "&key=<key>"
         )
         response = urlopen(req)
         json_data = response.read().decode("utf-8", "replace")
@@ -29,7 +29,7 @@ class Request:
     #             + state
     #             + "&country="
     #             + country
-    #             + "&key=14098954-5274-4969-b70a-c68fc6d522ca"
+    #             + "&key=<key>"
     #     )
     #     response = urlopen(req)
     #     json_data = response.read().decode("utf-8", "replace")
