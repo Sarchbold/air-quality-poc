@@ -11,7 +11,7 @@ def getsupportedstates(country):
     req = (
         "http://api.airvisual.com/v2/states?country="
         + country
-        + "&key=14098954-5274-4969-b70a-c68fc6d522ca"
+        + "&key=<getkey>"
     )
     response = urlopen(req)
     json_data = response.read().decode("utf-8", "replace")
@@ -26,7 +26,7 @@ def getcountrydata(city, state, country):
         + state
         + "&country="
         + country
-        + "&key=14098954-5274-4969-b70a-c68fc6d522ca"
+        + "&key=<getkey>"
     )
     response = urlopen(req)
     json_data = response.read().decode("utf-8", "replace")
