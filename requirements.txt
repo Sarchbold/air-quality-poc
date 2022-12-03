@@ -189,7 +189,7 @@ watchgod==0.7
     # via uvicorn
 webencodings==0.5.1
     # via bleach
-websockets==9.1
+websockets==10.0
     # via uvicorn
 werkzeug==2.0.1
     # via flask
