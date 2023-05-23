@@ -138,7 +138,7 @@ readme-renderer==29.0
     # via twine
 regex==2021.8.28
     # via black
-requests==2.26.0
+requests==2.31.0
     # via
     #   -r ./requirements.in
     #   python-gitlab
