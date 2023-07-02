@@ -105,7 +105,7 @@ py==1.10.0
     # via pytest
 pydantic==1.8.2
     # via fastapi
-pygments==2.10.0
+pygments==2.15.0
     # via readme-renderer
 pylint==2.10.2
     # via -r ./requirements.in
