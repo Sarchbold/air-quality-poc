@@ -51,7 +51,7 @@ flask-swagger-ui==3.36.0
     # via -r ./requirements.in
 gitdb==4.0.7
     # via gitpython
-gitpython==3.1.18
+gitpython==3.1.35
     # via python-semantic-release
 h11==0.12.0
     # via uvicorn
