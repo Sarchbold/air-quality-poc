@@ -85,7 +85,7 @@ mccabe==0.6.1
     # via pylint
 mypy-extensions==0.4.3
     # via black
-numpy==1.21.2
+numpy==1.22.0rc1
     # via pandas
 packaging==21.0
     # via
