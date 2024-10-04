@@ -126,7 +126,7 @@ python-dotenv==0.19.0
     # via uvicorn
 python-gitlab==2.10.1
     # via python-semantic-release
-python-semantic-release==7.19.1
+python-semantic-release==9.8.8
     # via -r ./requirements.in
 pytz==2021.1
     # via pandas
