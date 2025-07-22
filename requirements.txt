@@ -162,7 +162,7 @@ six==1.16.0
     #   readme-renderer
 smmap==4.0.0
     # via gitdb
-starlette==0.14.2
+starlette==0.47.2
     # via fastapi
 toml==0.10.2
     # via
