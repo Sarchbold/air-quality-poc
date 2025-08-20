@@ -57,6 +57,7 @@ h11
     # via uvicorn
 httptools
     # via uvicorn
+httpx
 idna
     # via requests
 importlib-metadata
