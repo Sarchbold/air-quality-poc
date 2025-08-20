@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-FROM python:3.10-slim-buster
+FROM python:3.13-slim-buster
 WORKDIR /app
 COPY / /app/
 RUN apt-get update && \

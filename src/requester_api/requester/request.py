@@ -1,9 +1,8 @@
 """
 Send the request to the external API and return results
 """
-import pandas as pd
+
 from urllib.request import urlopen
-import json
 
 
 class Request:
@@ -12,14 +11,11 @@ class Request:
 
     def getsupportedstates(self):
         req = (
-                "http://api.airvisual.com/v2/states?country="
-                + self.country
-                + "&key=<key>"
+            "http://api.airvisual.com/v2/states?country=" + self.country + "&key=<key>"
         )
         response = urlopen(req)
         json_data = response.read().decode("utf-8", "replace")
         return json_data
-
 
     # def getcountrydata(city, state, country):
     #     req = (

@@ -1,7 +1,8 @@
-from requester_api.main import app as app
-from fastapi.testclient import TestClient
 import json
 
+from fastapi.testclient import TestClient
+
+from requester_api.main import app as app
 
 client = TestClient(app)
 

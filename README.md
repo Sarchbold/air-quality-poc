@@ -13,9 +13,9 @@ To install dependencies, run pip install -r requirements.txt
 
 To update the requirements.txt, install pip-tools, edit requirements.in, and run pip-compile ./requirements.in
 
-To generate a docker image build with the requirements installed run 
+To generate a docker image build with the requirements installed run
 
-    ./docker-build.sh 
+    ./docker-build.sh
 
 To start the container run:
 

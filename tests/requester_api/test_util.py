@@ -12,9 +12,9 @@ import tempfile
 import unittest
 
 from pathspec.util import (
+    RecursionError,
     iter_tree_entries,
     iter_tree_files,
-    RecursionError,
     normalize_file,
 )
 

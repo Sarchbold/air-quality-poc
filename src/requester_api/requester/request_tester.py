@@ -1,7 +1,6 @@
-""" Test area for functionality """
+"""Test area for functionality"""
 
 from request import Request
-import json
 
 response = Request("USA")
 print(response.getsupportedstates())
