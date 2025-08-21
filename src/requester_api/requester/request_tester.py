@@ -1,6 +1,6 @@
 """Test area for functionality"""
 
-from request import Request
+from src.requester_api.requester.request import Request
 
 response = Request("USA")
 print(response.getsupportedstates())
